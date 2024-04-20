@@ -1,0 +1,111 @@
+'use strict'
+
+/* function availableSpots(arr, num) {
+	let count=0;
+    if(num%2==0){
+    for (let index = 0; index < arr.length - 1; index++) {
+       if ((arr[index]%2==0 && arr[index + 1]%2==1) || (arr[index]%2==1 && arr[index + 1]%2==0) || (arr[index]%2==0 && arr[index + 1]%2==0)) {
+         count+=1;
+       }
+        
+    }
+    }
+    else{
+        for (let index = 0; index < arr.length - 1; index++) {
+            if ((arr[index]%2==0 && arr[index + 1]%2==1) || (arr[index]%2==1 && arr[index + 1]%2==0) || (arr[index]%2==1 && arr[index + 1]%2==1)) {
+              count+=1;
+            }
+             
+         }
+    }return count;
+}
+
+
+console.log(availableSpots([0, 4, 6, 8], 9));
+console.log(availableSpots([0, 4, 6, 8], 12));
+console.log(availableSpots([4, 4, 4, 4, 5], 7));
+console.log(availableSpots([4, 4], 8)); */
+
+
+
+/* function lcm(n1, n2) {
+    if (n1>n2) {
+        let temp=n1;
+        n1=n2;
+        n2=temp;
+    }
+    let i=1, init=n2;
+    while (true) {
+        if (n2%n1==0) {
+            break;
+        }
+        else{
+            i+=1;
+            n2=init*i;
+            
+        }
+    }return n2;
+}
+
+console.log(lcm(9, 18));
+console.log(lcm(8, 5));
+console.log(lcm(17, 11)); */
+
+
+/* const myRegExp = new RegExp("^[0-9]{4}$|^[0-9]{6}$");
+
+console.log(myRegExp.test("1234"));
+console.log(myRegExp.test("45135"));
+console.log(myRegExp.test("89abc1"));
+console.log(myRegExp.test("900876"));
+console.log(myRegExp.test(" 4983"));
+
+ */
+
+function convert(deg) {
+    let degrees=new String();
+    if(deg.charAt(0)=='-')
+    {
+        for (let index = 1; index < deg.length; index++) {
+            degrees+=deg.charAt(index);
+            
+        }
+    }
+    else{
+        
+        for (let index = 0; index < deg.length; index++) {
+            degrees+=deg.charAt(index);
+            
+        }
+    }
+    let temperature=0, p=1;
+	if (degrees.charAt(degrees.length-1)=='C') {
+        if (degrees.charAt(degrees.length-2) =='°') {
+            for (let index = degrees.length-3; index >= 0; index--) {
+                temperature+=degrees[index]*p;
+                p*=10;
+            }
+        }
+        if(deg.charAt(0)=='-')
+            return Math.round(-temperature*(1.8) +32)+"°"+"F";
+        else return Math.round(temperature*(1.8) +32)+"°"+"F";
+
+    } 
+    else if ((degrees.charAt(degrees.length-1)=='F')){
+        if (degrees.charAt(degrees.length-2) =='°') {
+            for (let index = degrees.length-3; index >= 0; index--) {
+                temperature+=degrees[index]*p;
+                p*=10;
+            }
+        }
+        if(deg.charAt(0)=='-')
+            return Math.round((-temperature - 32)/(1.8))+"°"+"C";
+        else return Math.round((temperature - 32)/(1.8))+"°"+"C";
+    }
+    else return "Error";
+}
+
+console.log(convert('85°C'));
+console.log(convert('18°C'));
+console.log(convert("33"));
+console.log(convert('-40°C'));
