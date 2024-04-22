@@ -13,6 +13,7 @@
 // bitwiseXOR(6, 23) ➞ 00010001
 // Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
 
+
 function bitwiseAND(n1, n2) {
     let bitWise="";
     let b1=n1.toString(2), b2=n2.toString(2);
