@@ -82,7 +82,6 @@ public class PageChapter {
 	
 	}
 
-
 		
 
 	public static String closestToPage(ArrayList<Map.Entry<String, Integer> > c, int p) {
