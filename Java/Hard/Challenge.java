@@ -163,3 +163,46 @@
 
      */
 
+
+// Product of Remaining Elements
+// Write a function that returns true if you can partition an array into one element and the rest, 
+// such that this element is equal to the product of all other elements excluding itself.
+
+
+
+public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(canPartition(new int[] {2, 8, 4, 1}));
+        System.out.println(canPartition(new int[] {-1, -10, 1, -2, 20}));
+        System.out.println(canPartition(new int[] {-1, -20, 5, -1, -2, 2}));
+        System.out.println(canPartition(new int[] {1, 1, -1, 1}));
+        System.out.println(canPartition(new int[] {-1, -1, 1, 1}));
+        System.out.println(canPartition(new int[] {0, 5, 1, -1}));
+        System.out.println(canPartition(new int[] {0, 1, 1, -1}));
+        System.out.println(canPartition(new int[] {0, 1, 1, 1}));
+        System.out.println(canPartition(new int[] {0, 0, 1, 1}));
+        System.out.println(canPartition(new int[] {0, 0, 1}));
+        System.out.println(canPartition(new int[] {0, 0, 0}));
+        System.out.println(canPartition(new int[] {5, 5, 25, 100}));
+        System.out.println(canPartition(new int[] {-1, 5, 20, 100}));
+        System.out.println(canPartition(new int[] {1, 1, 1, 1}));
+        System.out.println(canPartition(new int[] {-1, 1, -1}));
+        System.out.println(canPartition(new int[] {-1, 1, 1}));
+        
+    
+    }
+        public static boolean canPartition(int[] arr) {
+        int prod=0;
+        for (int i = 0; i < arr.length; i++) {
+            prod=1;
+            for (int j = 0; j < arr.length; j++) {
+                if (i!=j) {
+                    prod*=arr[j];
+                }
+            }
+            if (prod==arr[i]) {
+                return true;
+            }
+        }return false;            
+    }
+}

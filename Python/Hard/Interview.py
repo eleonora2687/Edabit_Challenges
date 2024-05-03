@@ -181,3 +181,71 @@ print(loves_me(69))
 print(loves_me(70))
  """
  
+
+# Tallest Skyscraper
+
+# A city skyline can be represented as a 2-D list with 1s representing buildings. In the example below, the height of the tallest building is 4 (second-most right column).
+
+# [[0, 0, 0, 0, 0, 0],
+# [0, 0, 0, 0, 1, 0],
+# [0, 0, 1, 0, 1, 0],
+# [0, 1, 1, 1, 1, 0],
+# [1, 1, 1, 1, 1, 1]]
+
+def tallest_skyscraper(lst):
+    max_height=0
+    height=0
+    for i in range(len(lst[0])):
+        height=0
+        for j in range(len(lst)):
+            if lst[j][i] == 1:
+                height+=1
+        if max_height<height:
+            max_height=height
+    return max_height
+
+
+print(tallest_skyscraper([
+  [0, 0, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [1, 1, 1, 1]
+]))
+
+print(tallest_skyscraper([
+  [0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [1, 1, 1, 1]
+]))
+
+print(tallest_skyscraper([
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [1, 1, 1, 0],
+  [1, 1, 1, 1]
+]))
+
+
+print(tallest_skyscraper([
+	[0, 0, 0, 1],
+	[0, 0, 0, 1],
+	[1, 1, 1, 1],
+	[1, 1, 1, 1]
+]))
+
+print(tallest_skyscraper([
+	[0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0],
+	[1, 1, 1, 1, 0, 0],
+	[1, 1, 1, 1, 1, 1]
+]))
+
+
+print(tallest_skyscraper([
+	[0, 1, 0, 0, 0, 0],
+	[0, 1, 0, 0, 0, 0],
+	[0, 1, 0, 0, 0, 0],
+	[1, 1, 1, 1, 0, 0],
+	[1, 1, 1, 1, 1, 1]
+]))
