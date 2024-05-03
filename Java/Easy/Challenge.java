@@ -121,3 +121,59 @@
   }
 } */
 
+
+
+
+// Basic Calculator
+// Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers.
+
+/* public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(calculator(2, '+', 2));
+        System.out.println(calculator(2, '*', 2));
+        System.out.println(calculator(4, '/', 2));
+        System.out.println(calculator(15, '+', 26));
+        System.out.println(calculator(2, '+', 2));
+        System.out.println(calculator(2, '/', 0));    
+    }
+	public static int calculator(int num1, char operator, int num2) {
+		if (operator == '/' && num2 == 0) {
+            return 0;
+        } else if (operator == '+'){
+            return num1 + num2;
+        } else if(operator == '-'){
+            return num1 - num2;
+        }else if(operator == '/'){
+            return num1/num2;
+        }return num1*num2;
+  }
+} */
+
+
+// Exists a Number Higher?
+// Write a function that returns true if there exists at least one number that is larger than or equal to n.
+
+/* public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(existsHigher(new int[] {5, 3, 15, 22, 4}, 10));
+        System.out.println(existsHigher(new int[] {1, 2, 3, 4, 5}, 8));
+        System.out.println(existsHigher(new int[] {4, 3, 3, 3, 2, 2, 2}, 4));
+        System.out.println(existsHigher(new int[] {2, 2, 2, 2}, 5));
+        System.out.println(existsHigher(new int[] {}, 0));
+
+    }
+	public static boolean existsHigher(int[] arr, int n) {
+		boolean exists = false;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= n) {
+                exists = true;
+                break;
+            }
+        }
+        if (exists == true) {
+            return true;
+        }return false;
+	}
+} */
+
+

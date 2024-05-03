@@ -116,7 +116,7 @@ console.log(convert('-40°C')); */
 
 // A pandigital number contains all digits (0-9) at least once. Write a function that takes an integer, returning true if the integer is pandigital, and false otherwise.
 
-function isPandigital(num) {
+/* function isPandigital(num) {
         var digits=[];
         let i;
         digits.push(num%10);
@@ -160,3 +160,6 @@ console.log(isPandigital(768431605430));
 console.log(isPandigital(4920124852367763));
 console.log(isPandigital(60543981597247));
 console.log(isPandigital(10282343456789));
+ */
+
+

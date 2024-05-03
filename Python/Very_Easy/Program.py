@@ -26,10 +26,46 @@
 # Return the Next Number from the Integer Passed
 # Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 
-def addition(num):
+""" def addition(num):
     num = num + 1
     return num
 
 print(addition(0))
 print(addition(9))
-print(addition(-3))
+print(addition(-3)) 
+
+"""
+
+
+# Convert Minutes into Seconds
+# Write a function that takes an integer minutes and converts it to seconds.
+
+""" def convert(minutes):
+    return minutes*60
+
+print(convert(5))
+print(convert(3))
+print(convert(2))
+print(convert(6))
+print(convert(4))
+print(convert(8))
+print(convert(60))
+
+"""
+
+
+# Area of a Triangle
+# Write a function that takes the base and height of a triangle and return its area.
+
+""" def tri_area(base, height):
+    return (base*height)/2
+
+print(tri_area(3, 2))
+print(tri_area(7, 4))
+print(tri_area(10, 10))
+print(tri_area(5, 4))
+print(tri_area(0, 60))
+print(tri_area(12, 11))
+ """
+ 
+ 
