@@ -119,3 +119,31 @@
 } */
 
 
+
+// Recursion: Array Sum
+
+// Write a function that finds the sum of an array. Make your function recursive.
+
+/* import java.util.Arrays;
+
+public class Program {
+    public static void main(String[] args) {
+        System.out.println(sum(new int[]{1, 2, 3, 4}));
+        System.out.println(sum(new int[]{1, 2}));
+        System.out.println(sum(new int[]{1}));
+        System.out.println(sum(new int[]{}));
+        System.out.println(sum(new int[]{-1, -1, -1}));
+    }
+	public static int sum(int[] arr) {
+		if (arr.length == 0) {
+            return 0;
+        }
+        else if(arr.length == 1){
+            return arr[0];
+        }
+        return arr[0] + sum(Arrays.copyOfRange(arr, 1, arr.length));
+	}
+} */
+
+
+

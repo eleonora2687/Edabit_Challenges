@@ -108,3 +108,25 @@ print(shift_to_right(192, 4))
  """
  
  
+# Find the Highest Integer in the List Using Recursion
+
+# Create a function that finds the highest integer in the list using recursion.
+
+""" def find_highest(lst):
+    if len(lst) == 1:
+        return lst[0]
+    else:
+        return high_val(lst, lst[0], 1)
+    
+    
+def high_val(lst, maxi, i):
+    if i == len(lst):
+        return maxi
+    elif maxi <lst[i]:
+        maxi=lst[i]
+    return high_val(lst, maxi, i+1)
+
+
+print(find_highest([-1, 3, 5, 6, 99, 12, 2]))
+print(find_highest([0, 12, 4, 87]))
+print(find_highest([8])) """

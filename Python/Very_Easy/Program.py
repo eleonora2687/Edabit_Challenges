@@ -69,3 +69,16 @@ print(tri_area(12, 11))
  """
  
  
+# Convert Hours into Seconds
+
+# Write a function that converts hours into seconds.
+
+
+""" def how_many_seconds(hours):
+    return hours*3600
+
+print(how_many_seconds(2))
+print(how_many_seconds(10))
+print(how_many_seconds(24))
+print(how_many_seconds(36)) """
+

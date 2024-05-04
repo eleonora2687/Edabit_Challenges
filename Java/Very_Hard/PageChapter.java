@@ -106,7 +106,7 @@ public class PageChapter {
 }
 } */
 
-import java.util.Hashtable;
+/* import java.util.Hashtable;
 
 public class PageChapter {
 	public static void main(String[] args) {
@@ -163,4 +163,4 @@ public class PageChapter {
 			res+=Math.pow(26, i)*my_dict.get(s.charAt(n - 1 - i));
 		}return res;
 	}
-}
+} */

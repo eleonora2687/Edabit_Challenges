@@ -96,4 +96,23 @@
 } */
 
 
-    
+
+// Are the Numbers Equal?
+
+// Create a function that returns true when x is equal to y; otherwise return false.
+
+
+/* public class Program {
+    public static void main(String[] args) {
+        System.out.println(isSameNum(2, 2));
+        System.out.println(isSameNum(4, 8));
+        System.out.println(isSameNum(0, 6));
+        System.out.println(isSameNum(42, 32));
+    }
+	public static boolean isSameNum(int x, int y) {
+		if (x == y) {
+            return true;
+        }return false;
+	}
+} */
+

@@ -177,3 +177,45 @@
 } */
 
 
+
+// Shuffle the Name
+
+// Create a method that accepts a string (of a person's first and last name) and returns a string with the first and last name swapped.
+
+
+public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(nameShuffle("Donald Trump"));
+        System.out.println(nameShuffle("Rosie O'Donnell"));
+        System.out.println(nameShuffle("Seymour Butts"));
+        System.out.println(nameShuffle("Ebony Greene"));
+        System.out.println(nameShuffle("Allison Gonzalez"));
+        System.out.println(nameShuffle("Albert Frazier"));
+        System.out.println(nameShuffle("Eloise Hopkins"));
+        System.out.println(nameShuffle("Donnie Welch"));
+        System.out.println(nameShuffle("Vernon Thomas"));
+        
+    }
+    public static String nameShuffle(String s) {
+        int i = 0;
+        String emptyNewString = new String("");
+        for (i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                break;
+            }
+        }i++;
+        for (int j = i; j < s.length(); j++) {
+            emptyNewString+=s.charAt(j);
+        }
+        emptyNewString+=' ';
+        for (int j = 0; j < s.length(); j++) {
+            if (s.charAt(j) ==' ') {
+                break;
+            }
+            else{
+                emptyNewString+=s.charAt(j);
+            }
+        }return emptyNewString;
+
+    }
+}

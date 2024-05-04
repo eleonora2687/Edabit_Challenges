@@ -71,3 +71,32 @@ console.log(possibleBonus(23, 27));
 console.log(possibleBonus(1, 9));
 console.log(possibleBonus(5, 3));
  */
+
+
+
+// Right Shift by Division
+
+// The right shift operation is similar to floor division by powers of two.
+
+// Sample calculation using the right shift operator ( >> ):
+
+// 80 >> 3 = floor(80/2^3) = floor(80/8) = 10
+// -24 >> 2 = floor(-24/2^2) = floor(-24/4) = -6
+// -5 >> 1 = floor(-5/2^1) = floor(-5/2) = -3
+// Write a function that mimics (without the use of >>) the right shift operator and returns the result from the two given integers.
+
+
+/* function shiftToRight(x, y) {
+	return Math.floor(x/2**y);
+}
+
+console.log(shiftToRight(80, 3));
+console.log(shiftToRight(-24, 2));
+console.log(shiftToRight(-5, 1));
+console.log(shiftToRight(4666, 6));
+console.log(shiftToRight(3777, 6));
+console.log(shiftToRight(-512, 10));
+console.log(shiftToRight(38, 0));
+console.log(shiftToRight(192, 4));
+console.log(shiftToRight(1024, 5));
+ */

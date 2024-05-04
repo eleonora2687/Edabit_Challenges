@@ -170,7 +170,7 @@
 
 
 
-public class Challenge {
+/* public class Challenge {
     public static void main(String[] args) {
         System.out.println(canPartition(new int[] {2, 8, 4, 1}));
         System.out.println(canPartition(new int[] {-1, -10, 1, -2, 20}));
@@ -205,4 +205,45 @@ public class Challenge {
             }
         }return false;            
     }
-}
+} */
+
+
+
+// Find the Odd Integer
+
+// Create a function that takes an array and finds the integer which appears an odd number of times.
+
+
+/* public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(findOdd(new int[]{1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5}));
+        System.out.println(findOdd(new int[]{20, 1, 1, 2, 2, 3, 3, 5, 5, 4, 20, 4, 5}));
+        System.out.println(findOdd(new int[]{10}));
+        System.out.println(findOdd(new int[]{20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5}));
+        System.out.println(findOdd(new int[]{1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1}));
+        System.out.println(findOdd(new int[]{5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10}));
+        
+    }
+	public static int findOdd(int[] arr) {
+		int num_of_app=1, i=0, j=0;
+        for (i = 0; i < arr.length; i++) {
+            num_of_app=0;
+            for (j = 0; j < i; j++) {
+                if (arr[i] == arr[j]) {
+                    break;
+                }
+            }
+            if (j == i) {
+                num_of_app=1;
+                for (int j2 = i+1; j2 < arr.length; j2++) {
+                    if (arr[j2] == arr [i]) {
+                        num_of_app+=1;
+                    }
+                }
+            }
+            if (num_of_app %2 ==1) {
+                break;
+            }
+        }return arr[i];
+	}
+} */

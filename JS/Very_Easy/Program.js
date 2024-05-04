@@ -78,3 +78,22 @@ console.log(triArea(12, 11));
  */
 
 
+
+
+// Convert Age to Days
+
+// Create a function that takes the age in years and returns the age in days.
+
+/* function calcAge(age) {
+    return age*365;
+}
+
+console.log(calcAge(0));
+console.log(calcAge(20));
+console.log(calcAge(65));
+console.log(calcAge(10));
+console.log(calcAge(73));
+ */
+
+
+

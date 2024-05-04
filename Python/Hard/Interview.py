@@ -192,7 +192,7 @@ print(loves_me(70))
 # [0, 1, 1, 1, 1, 0],
 # [1, 1, 1, 1, 1, 1]]
 
-def tallest_skyscraper(lst):
+""" def tallest_skyscraper(lst):
     max_height=0
     height=0
     for i in range(len(lst[0])):
@@ -249,3 +249,34 @@ print(tallest_skyscraper([
 	[1, 1, 1, 1, 0, 0],
 	[1, 1, 1, 1, 1, 1]
 ]))
+ """
+ 
+ 
+ 
+# C*ns*r*d Str*ngs
+
+# Someone has attempted to censor my strings by replacing every vowel with a *, l*k* th*s. Luckily, I've been able to find the vowels that were removed.
+
+# Given a censored string and a string of the censored vowels, return the original uncensored string.
+
+
+""" def uncensor(txt, vowels):
+    lst1=list(txt)
+    lst2=list(vowels)
+    j=0
+    for i in range(len(lst2)):
+        while j<len(lst1):
+            if lst1[j]=='*':
+                lst1[j]=lst2[i]
+                j+=1
+                break
+            else:
+                j+=1
+    return ''.join(lst1)
+
+print(uncensor("*PP*RC*S*", "UEAE"))
+print(uncensor("abcd", ""))
+print(uncensor("Wh*r* d*d my v*w*ls g*?", "eeioeo"))
+print(uncensor('Ch**s*, Gr*mm*t -- ch**s*', 'eeeoieee'))
+print(uncensor('*l*ph*nt', 'Eea'))
+ """

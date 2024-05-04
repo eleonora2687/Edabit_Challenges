@@ -49,7 +49,7 @@ console.log(sevenBoom([76, 55, 44, 32]));
 // Write a recursive function that mimics (without the use of <<) the left shift operator and returns the result from the two given integers.
 
 
-function shiftToLeft(x, y) {
+/* function shiftToLeft(x, y) {
     if (y==0) {
         return x;
     }
@@ -64,4 +64,4 @@ console.log(shiftToLeft(-6, 5));
 console.log(shiftToLeft(12, 4));
 console.log(shiftToLeft(46, 6));
 console.log(shiftToLeft(57, 0));
-console.log(shiftToLeft(79, 1));
+console.log(shiftToLeft(79, 1)); */
